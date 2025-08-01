@@ -1,0 +1,66 @@
+# user
+{   #登录相关
+    "UId": 12345, # 唯一id
+    "username": "string", # 用户名
+    "email": "string", # 邮箱
+    "phoneNumber": 1234567890, # 手机号码
+    "zhongjiantong": {
+        "name": "string", # 中建通名称
+        "id": "string", # 中建通ID
+    }, # 中建通
+    "wechat": {
+        "name": "string",
+        "id": "string",
+    }, # 微信号
+    "qq": {
+        "name": "string",
+        "id": "string",
+    }, # QQ号
+    "password": "string", # 密码
+    "isActive": true, # 是否激活
+    "role": "string", # 用户角色: "user" 普通用户, "admin" 管理员：枚举类型
+
+
+
+    # 账户信息
+    "createdAt": "2023-10-01T12:00:00Z", # 创建时间
+    "lastLogin": "2023-10-01T12:00:00Z", # 最后登录时间
+    "lastLoginIP": "192.168.1.1", # 最后登录IP地址，用ip获取地理位置
+
+    "studyTime": 123, # 总学习时间，minutes
+    "studyTimeToday": 30, # 今日学习时间，minutes
+    "studyTimeThisWeek": 120, # 本周学习时间，minutes
+    "studyTimeThisMonth": 300, # 本月学习时间，minutes
+
+    "totalQuestionsAnswered": 50, # 总答题数
+    "totalQuestionsCorrect": 40, # 总答对题数
+
+    #点赞视频
+    "likedVideos": [
+        {
+            "videoId": "string", # 视频ID
+            "videoTitle": "string", # 视频标题
+            "likedAt": "2023-10-01T12:00:00Z" # 点赞时间
+        }
+    ],
+
+    # 收藏视频
+    "bookmarkedVideos": [
+        {
+            "videoId": "string", # 视频ID
+            "videoTitle": "string", # 视频标题
+            "bookmarkedAt": "2023-10-01T12:00:00Z" # 收藏时间
+        }
+    ],
+
+    # 浏览历史
+    "viewHistory": [
+        {
+            "videoId": "string", # 视频ID
+            "videoTitle": "string", # 视频标题
+            "videoPosition": 123, # 视频定位
+            "viewedAt": "2023-10-01T12:00:00Z" # 浏览时间
+        }
+    ],
+
+}
